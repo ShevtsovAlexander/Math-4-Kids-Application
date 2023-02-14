@@ -7,14 +7,12 @@ const audio = document.querySelector('#myAudio')
 var answer = 0;
 
 function generate_equation() {
-    var num1 = Math.floor(Math.random() * 13)
-    var num2 = Math.floor(Math.random() * 13)
-
-    var dummyAnswer1 = Math.floor(Math.random() * 10)
-    var dummyAnswer2 = Math.floor(Math.random() * 10)
-
-    var allAnswers = [];
-    var switchAnswers = [];
+    var num1 = Math.floor(Math.random() * 10) + 1,
+    num2 = Math.floor(Math.random() * 10) + 1,
+    dummyAnswer1 = Math.floor(Math.random() * 10) / 10,
+    dummyAnswer2 = Math.floor(Math.random() * 10),
+    allAnswers = [],
+    switchAnswers = [];
 
     answer = eval(num1 / num2);
     
